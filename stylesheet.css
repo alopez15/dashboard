@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;   
+}
+
+body{
+    height: 100vh;    
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    height: 100%;
+}
+
+nav{
+    background-color: rgb(148, 202, 249);
+    grid-column: 1 ;
+    grid-row: 1 / 3;
+    min-width: 200px;
+}
+
+header{
+    background-color: red;
+    min-height: 150px;
+}
+
+main{
+    background-color: yellow;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 4fr 4fr;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+#projects{
+    background-color: aliceblue;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    min-width: 200px;
+}
+
+#announcements{
+    background-color: aqua;
+    grid-row: 1 / 2;
+}
+
+#trending{
+    background-color: blueviolet;
+    grid-row: 2 / 3;
+}
+
+#projects div>div{
+    border: solid black;
+    height: 100px;
+    margin: 5px;
+    min-width: 100px;
+    width: 80%;
+    grid-template-columns: fit-content(100%);
+    padding: 1rem;
+    
+}
+
+#projects div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
+    grid-template-rows: repeat(3, 1fr);
+    
+}
+
+#projects div>div p{
+    font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    #projects div { 
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); }
+
+    #projects div>div{
+        overflow: auto;
+    }
+  }
+  
