@@ -5,31 +5,161 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Dashboard</title>
   </head>
   <body>
     <div class="container">
-      <nav><img src="./public/view-dashboard (1).png" alt="dashboard-icon"></nav>
-      <header></header>
+      <nav>
+        <div id="dashboard-logo">
+          <img src="./public/img/view-dashboard (1).png" alt="dashboard-icon" />
+          <h2>Dashboard</h2>
+        </div>
+        <div class="li-styles">
+          <ul>
+            <li><img src="./public/img/home.png" alt="home icon" /> Home</li>
+            <li>
+              <img src="./public/img/account-box.png" alt="profile icon" />
+              Profile
+            </li>
+            <li>
+              <img src="./public/img/android-messages.png" alt="message icon" />
+              Messages
+            </li>
+            <li>
+              <img src="./public/img/history.png" alt="history icon" /> History
+            </li>
+            <li>
+              <img
+                src="./public/img/note-multiple-outline.png"
+                alt=" tasks icon"
+              />
+              Tasks
+            </li>
+            <li>
+              <img src="./public/img/account-group.png" alt="community icon" />
+              Communities
+            </li>
+          </ul>
+        </div>
+        <div class="li-styles">
+          <ul>
+            <li><img src="./public/img/cog.png" alt="cog icon" /> Settings</li>
+            <li>
+              <img
+                src="./public/img/help-circle-outline.png"
+                alt="support icon"
+              />
+              Support
+            </li>
+            <li>
+              <img src="./public/img/shield-check.png" alt="shield icon" />
+              Privacy
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header>
+        <div id="header-container">
+          <div id="top-header">
+            <div id="search-bar-div">
+              <img src="./public/img/magnify.png" alt="magnifying glass icon" />
+              <form action=""><input type="text" /></form>
+            </div>
+            <div id="profile-icon-div">
+              <img
+                src="./public/img/bell-ring-outline (1).png"
+                alt="bell icon"
+              />
+              <img
+                class="cat-icon"
+                src="public/img/cat icon.png"
+                alt="cat icon"
+              />
+              <span>Morgan Oakley</span>
+            </div>
+          </div>
+          <div id="bottom-header">
+              <div id="profile-name-div">
+            <div>
+              <img
+                class="cat-icon"
+                src="./public/img/cat icon.png"
+                alt="cat icon"
+              />
+            </div>
+            <div><p>Hi there, <br><span class="big-text"> Morgan Oakley </span></p></div>
+        </div>
+            <div id="button-div">
+              <button>New</button><button>Upload</button><button>Share</button>
+            </div>
+          </div>
+        </div>
+      </header>
       <main>
         <section id="projects">
-            <h2>Your Projects</h2>
+          <h2>Your Projects</h2>
           <div>
-            <div><b>Super Cool Project</b><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id eius omnis dolorum doloremque veritatis quisquam</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos repudiandae blanditiis sint? Velit, et.</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos repudiandae blanditiis sint? Velit, et.</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos repudiandae blanditiis sint? Velit, et.</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos repudiandae blanditiis sint? Velit, et.</p></div>
-            <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dignissimos repudiandae blanditiis sint? Velit, et.</p></div>
-        </div>
+            <div>
+              <b>Super Cool Project</b>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id
+                eius omnis dolorum doloremque veritatis quisquam
+              </p>
+            </div>
+            <div>
+                <b>Less Cool Project</b>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                dignissimos repudiandae blanditiis sint? Velit, et.
+              </p>
+            </div>
+            <div>
+                <b>Impossible App</b>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                dignissimos repudiandae blanditiis sint? Velit, et.
+              </p>
+            </div>
+            <div>
+                <b>Easy Peasy App</b>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                dignissimos repudiandae blanditiis sint? Velit, et.
+              </p>
+            </div>
+            <div>
+                <b>Ad Blocker</b>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                dignissimos repudiandae blanditiis sint? Velit, et.
+              </p>
+            </div>
+            <div>
+                <b>Money Maker</b>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                dignissimos repudiandae blanditiis sint? Velit, et.
+              </p>
+            </div>
+          </div>
         </section>
         <section id="announcements">
-            <h2>Announcements</h2>
-          <div></div>
+          <h2>Announcements</h2>
+          <div><b>Site Maintenance</b><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ipsa minima minus quas voluptas deserunt.</p></div>
+          <div><b>Site Maintenance</b><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ipsa minima minus quas voluptas deserunt.</p></div>
+          <div><b>Site Maintenance</b><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ipsa minima minus quas voluptas deserunt.</p></div>
         </section>
         <section id="trending">
-            <h2>Trending</h2>
-          <div></div>
+          <h2>Trending</h2>
+          <div><b>Site Maintenance</b><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ipsa minima minus quas voluptas deserunt.</p></div>
+          <div><b>Site Maintenance</b><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ipsa minima minus quas voluptas deserunt.</p></div>
+          <div><b>Site Maintenance</b><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo ipsa minima minus quas voluptas deserunt.</p></div>
         </section>
       </main>
     </div>
